@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hitung Nilai Rata-rata Mata Pelajaran</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Hitung Nilai Rata-rata Mata Pelajaran</h1>
+        
+        <!-- Input nilai mata pelajaran -->
+        <label for="nilaiMatematika">Nilai Matematika:</label>
+        <input type="number" id="nilaiMatematika" placeholder="Masukkan nilai Matematika" min="0" max="100">
+
+        <label for="nilaiBahasaIndonesia">Nilai Bahasa Indonesia:</label>
+        <input type="number" id="nilaiBahasaIndonesia" placeholder="Masukkan nilai Bahasa Indonesia" min="0" max="100">
+
+        <label for="nilaiIPA">Nilai IPA:</label>
+        <input type="number" id="nilaiIPA" placeholder="Masukkan nilai IPA" min="0" max="100">
+
+        <!-- Tombol hitung -->
+        <button onclick="hitungRataRata()">Hitung Rata-rata</button>
+
+        <!-- Hasil perhitungan -->
+        <div class="result">
+            <p id="hasilRataRata"></p>
+            <p class="grade" id="hasilKeterangan"></p>
+        </div>
+    </div>
+
+   <script src="main.js"></script>
+</body>
+</html>
